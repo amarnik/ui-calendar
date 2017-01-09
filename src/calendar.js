@@ -299,7 +299,7 @@ angular.module('ui.calendar', [])
                             if (attrs.calendar) {
                                 uiCalendarConfig.calendars[attrs.calendar] = calendar;
                             }
-                            calendar.fullCalendar('addEventSource', source);
+                            calendar.fullCalendar('addEventSource', [source]);
                             sourcesChanged = true;
                         }
                     };
